@@ -226,7 +226,7 @@ ul.side-nav {
 ul.side-nav li {
   padding: 0;
 }
-
+/*
 ul.side-nav.fixed a {
   box-sizing: content-box;
   color: rgb(48, 122, 207);
@@ -234,10 +234,10 @@ ul.side-nav.fixed a {
   line-height: 100%;
   padding: 10px 0 12px;
 } 
-
+*/
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: rgb(16, 202, 193);
+  color: rgb(4, 75, 97);
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
@@ -473,7 +473,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #12517a !important;
+  border-bottom: 3px solid #46c5f7 !important;
 }
 
 #skills .card.large {
