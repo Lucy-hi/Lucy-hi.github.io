@@ -30,11 +30,37 @@ const projects = [
 ];
 
 let cur_idx = 0;
+let lastest_idx = 0;
+let unpressed = 1;
+
+function findLatestProject(){
+    let current_latest_date = projects[0].date;
+    let i = 0;
+    while (i < projects.length) {
+      if(current_latest_date < projects[i].date){
+          current_latest_date = projects[i].date;
+          lastest_idx = i;
+      }
+      i++;
+    }
+}
 
 function displayProject(idx){
     if (idx >= projects.length) return;
+    let i = 0;
+    
+    while (i < projects.length) {
     const projectContainer = document.getElementById('most_recent_project');
-    const project = projects[idx];
+    findLatestProject();
+    if(unpressed) {
+      const project = projects[lastest_idx];
+      unpressed=0;
+    }else{
+      if(i = lastest_idx) i++;
+      if (i >= projects.length) return;
+      const project = projects[i];
+      i++;
+    }
 
     const projectDiv = document.createElement('div');
     projectDiv.classList.add("col", "s12", "m6", "l4");
@@ -96,7 +122,7 @@ function displayProject(idx){
 
     projectDiv.appendChild(projectCard);
     projectContainer.appendChild(projectDiv);
-
+    }
 }
 
 function pressLoadMore() {
