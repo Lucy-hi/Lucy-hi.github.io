@@ -30,14 +30,14 @@ const projects = [
 ];
 
 let cur_idx = 0;
-let lastest_idx = 2;
+let lastest_idx = 0;
 let unpressed = 1;
 
 function findLatestProject(){
     let current_latest_date = projects[0].date;
     let i = 0;
     while (i < projects.length) {
-      if(current_latest_date < projects[i].date){
+      if(projects[lastest_idx].date < projects[i].date){
           current_latest_date = projects[i].date;
           lastest_idx = i;
       }
