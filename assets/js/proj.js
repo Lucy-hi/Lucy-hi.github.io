@@ -37,12 +37,12 @@ function displayProject(idx){
 
     const project = projects[idx];
 
-    const projectDiv = document.createElement('div');
-    projectDiv.classList.add("col s12 m6 l4");
+//    const projectDiv = document.createElement('div');
+//    projectDiv.classList.add("col s12 m6 l4");
 //    projectDiv.classList.add("col", "s12", "m6", "l4");
 
-    const projectCard = document.createElement('div');
-    projectCard.classList.add("card");
+//    const projectCard = document.createElement('div');
+//    projectCard.classList.add("card");
 //    projectCard.classList.add("card", "medium");
 /*
     const cardImg = document.createElement('div');
@@ -97,8 +97,8 @@ function displayProject(idx){
 //    projectCard.appendChild(cardContent);
 //    projectCard.appendChild(cardReveal);
 
-    projectDiv.appendChild(projectCard);
-    projectContainer.appendChild(projectDiv);
+//    projectDiv.appendChild(projectCard);
+//    projectContainer.appendChild(projectDiv);
 
 }
 
