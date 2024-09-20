@@ -30,7 +30,7 @@ const projects = [
 ];
 
 let cur_idx = 0;
-let lastest_idx = 0;
+let lastest_idx = 2;
 let unpressed = 1;
 
 function findLatestProject(){
