@@ -34,13 +34,13 @@ let lastest_idx = 0;
 let unpressed = 1;
 
 function findLatestProject(){
-    let current_latest_date = projects[0].date;
     let i = 0;
     while (i < projects.length) {
       if(projects[lastest_idx].date < projects[i].date){
-          current_latest_date = projects[i].date;
+          console.log("find more recent date");
           lastest_idx = i;
       }
+      console.log("Both Dates are same");
       i++;
     }
 }
