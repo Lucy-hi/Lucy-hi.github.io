@@ -100,6 +100,7 @@ function displayProject(idx){
 }
 
 function pressLoadMore() {
+    const projectContainer = document.getElementById('most_recent_project');
 
     if (cur_idx < projects.length) {
         displayProject(cur_idx);
@@ -108,6 +109,9 @@ function pressLoadMore() {
         // Hide the "Load More" button if all projects are loaded
         if (cur_idx >= projects.length) {
             document.getElementById('load-more').style.display = 'none';
+            const noMore = document.createElement('p');
+            noMore.appendChild(document.createTextNode("No More Project..."));
+            projectContainer.appendChild(noMore);
         }
     }
 }
