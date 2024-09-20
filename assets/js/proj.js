@@ -2,7 +2,7 @@ const projects = [
     {title:"Deep Learning Handwritten Math Scanner", 
         description:"A handwritten math scanner using a transformer model", 
         img:"/assets/img/Deep-learning-for-computer-vision2.png",
-        date:"2024-09-20", 
+        date:"2021-09-20", 
         tools:"PyTorch", 
         details:["Researched on Convolutional Recurrent Neural Networks (CRNN) architecture and the Connectionist Temporal Classification (CTC) loss function to investigate potential deep learning models for the project",
             "Developed the primary deep learning model architecture featuring Convolutional Neural Network (CNN) layers followed by Transformers resulting in 98% accuracy",
@@ -30,7 +30,7 @@ const projects = [
 ];
 
 let cur_idx = 0;
-let lastest_idx = 1;
+let lastest_idx = 0;
 let unpressed = 1;
 
 function findLatestProject(){
@@ -116,7 +116,6 @@ function pressLoadMore() {
     const projectContainer = document.getElementById('most_recent_project');
     
       if(unpressed) {
-        findLatestProject();
         displayProject(lastest_idx);
         unpressed=0;
       }else{
@@ -137,4 +136,5 @@ function pressLoadMore() {
 }
 
 document.getElementById('load-more').addEventListener('click', pressLoadMore);
+findLatestProject();
 pressLoadMore();
