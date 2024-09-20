@@ -34,7 +34,10 @@ const projectContainer = document.getElementById('most_recent_project');
 
 function displayProject(idx){
     if (idx >= projects.length) return;
-
+    const projectP = document.createElement('p');
+    projectP.appendChild(document.createTextNode("Hay"));
+    projectContainer.appendChild(projectP);
+/* 
     const project = projects[idx];
 
     const projectDiv = document.createElement('div');
@@ -97,6 +100,7 @@ function displayProject(idx){
 
     projectDiv.appendChild(projectCard);
     projectContainer.appendChild(projectDiv);
+*/
 }
 
 function pressLoadMore() {
