@@ -119,12 +119,10 @@ function pressLoadMore() {
         displayProject(lastest_idx);
         unpressed=0;
       }else{
-        while(cur_idx<projects.length){
           if(cur_idx = lastest_idx) cur_idx++;
           if (cur_idx >= projects.length) return;
           displayProject(cur_idx);
           cur_idx++;
-        }
       }
 
         // Hide the "Load More" button if all projects are loaded
