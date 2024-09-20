@@ -110,7 +110,6 @@ function displayProject(idx){
 
     projectDiv.appendChild(projectCard);
     projectContainer.appendChild(projectDiv);
-    }
 }
 
 function pressLoadMore() {
