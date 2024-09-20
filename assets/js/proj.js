@@ -29,7 +29,7 @@ const projects = [
     },
 ];
 
-let cur_idx = 0;
+let cur_idx = 1;
 let lastest_idx = 0;
 let unpressed = 1;
 
