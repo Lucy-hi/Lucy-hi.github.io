@@ -30,10 +30,10 @@ const projects = [
 ];
 
 let cur_idx = 0;
-const projectContainer = document.getElementById('most_recent_project');
 
 function displayProject(idx){
-    if (idx >= projects.length) return;
+    /*if (idx >= projects.length) return;*/
+    const projectContainer = document.getElementById('most_recent_project');
     const projectP = document.createElement('p');
     projectP.appendChild(document.createTextNode("Hay"));
     projectContainer.appendChild(projectP);
@@ -104,6 +104,11 @@ function displayProject(idx){
 }
 
 function pressLoadMore() {
+    const projectContainer = document.getElementById('most_recent_project');
+    const projectP = document.createElement('p');
+    projectP.appendChild(document.createTextNode("Hay"));
+    projectContainer.appendChild(projectP);
+
     if (cur_idx < projects.length) {
         displayProject(cur_idx);
         cur_idx++;
