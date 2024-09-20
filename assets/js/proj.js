@@ -47,6 +47,8 @@ function findLatestProject(){
 
 function displayProject(idx){
     if (idx >= projects.length) return;
+    const projectContainer = document.getElementById('most_recent_project');
+    
     const projectDiv = document.createElement('div');
     projectDiv.classList.add("col", "s12", "m6", "l4");
 
