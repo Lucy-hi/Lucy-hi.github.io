@@ -34,6 +34,9 @@ let cur_idx = 0;
 function displayProject(idx){
     if (idx >= projects.length) return;
     const projectContainer = document.getElementById('most_recent_project');
+    const projectP = document.createElement('p');
+    projectP.appendChild(document.createTextNode("Hay"));
+    projectContainer.appendChild(projectP);
 
     const project = projects[idx];
 
