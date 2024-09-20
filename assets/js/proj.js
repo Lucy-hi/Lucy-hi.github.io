@@ -42,7 +42,7 @@ function displayProject(idx){
 
     const projectCard = document.createElement('div');
     projectCard.classList.add("card", "medium");
-
+/*
     const cardImg = document.createElement('div');
     cardImg.classList.add("card-image", "waves-effect", "waves-block", "waves-light");
     const Img = document.createElement('img');
@@ -51,7 +51,7 @@ function displayProject(idx){
     Img.setAttribute('style', "height: 100%; width: 100%");
     Img.setAttribute('class', "activator");
     cardImg.appendChild(Img);
-/*
+
     const cardContent = document.createElement('div');
     cardContent.classList.add("card-content");
     const cardContentSpan = document.createElement('span');
@@ -91,7 +91,7 @@ function displayProject(idx){
     cardReveal.appendChild(cardRevealUl);
 
 */
-    projectCard.appendChild(cardImg);
+//    projectCard.appendChild(cardImg);
 //    projectCard.appendChild(cardContent);
 //    projectCard.appendChild(cardReveal);
 
