@@ -134,7 +134,6 @@ function pressLoadMore() {
             noMore.appendChild(document.createTextNode("No More Project..."));
             projectContainer.appendChild(noMore);
         }
-    }
 }
 
 document.getElementById('load-more').addEventListener('click', pressLoadMore);
