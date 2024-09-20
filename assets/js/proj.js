@@ -41,13 +41,11 @@ function displayProject(idx){
     const project = projects[idx];
 
     const projectDiv = document.createElement('div');
-//    projectDiv.classList.add("col s12 m6 l4");
     projectDiv.classList.add("col", "s12", "m6", "l4");
 
     const projectCard = document.createElement('div');
-    projectCard.classList.add("card");
-//    projectCard.classList.add("card", "medium");
-/*
+    projectCard.classList.add("card", "medium");
+
     const cardImg = document.createElement('div');
     cardImg.classList.add("card-image", "waves-effect", "waves-block", "waves-light");
     const Img = document.createElement('img');
@@ -95,10 +93,10 @@ function displayProject(idx){
     cardReveal.appendChild(cardRevealSpan);
     cardReveal.appendChild(cardRevealUl);
 
-*/
-//    projectCard.appendChild(cardImg);
-//    projectCard.appendChild(cardContent);
-//    projectCard.appendChild(cardReveal);
+
+    projectCard.appendChild(cardImg);
+    projectCard.appendChild(cardContent);
+    projectCard.appendChild(cardReveal);
 
     projectDiv.appendChild(projectCard);
     projectContainer.appendChild(projectDiv);
