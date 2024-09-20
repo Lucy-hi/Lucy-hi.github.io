@@ -29,7 +29,7 @@ const projects = [
     },
 ];
 
-let cur_idx = 1;
+let cur_idx = 0;
 let lastest_idx = 0;
 let unpressed = 1;
 
@@ -121,9 +121,10 @@ function pressLoadMore() {
         unpressed=0;
       }else{
           if(cur_idx == lastest_idx) cur_idx++;
-          if (cur_idx >= projects.length) return;
-          displayProject(cur_idx);
-          cur_idx++;
+          if (cur_idx < projects.length) {
+            displayProject(cur_idx);
+            cur_idx++;
+          }
       }
 
         // Hide the "Load More" button if all projects are loaded
