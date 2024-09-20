@@ -38,10 +38,12 @@ function displayProject(idx){
     const project = projects[idx];
 
     const projectDiv = document.createElement('div');
-    projectDiv.classList.add("col", "s12", "m6", "l4");
+    projectDiv.classList.add("col");
+//    projectDiv.classList.add("col", "s12", "m6", "l4");
 
     const projectCard = document.createElement('div');
-    projectCard.classList.add("card", "medium");
+    projectCard.classList.add("card");
+//    projectCard.classList.add("card", "medium");
 /*
     const cardImg = document.createElement('div');
     cardImg.classList.add("card-image", "waves-effect", "waves-block", "waves-light");
