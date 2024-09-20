@@ -32,12 +32,9 @@ const projects = [
 let cur_idx = 0;
 
 function displayProject(idx){
-    /*if (idx >= projects.length) return;*/
+    if (idx >= projects.length) return;
     const projectContainer = document.getElementById('most_recent_project');
-    const projectP = document.createElement('p');
-    projectP.appendChild(document.createTextNode("Hay"));
-    projectContainer.appendChild(projectP);
-/* 
+
     const project = projects[idx];
 
     const projectDiv = document.createElement('div');
@@ -54,7 +51,7 @@ function displayProject(idx){
     Img.setAttribute('style', "height: 100%; width: 100%");
     Img.setAttribute('class', "activator");
     cardImg.appendChild(Img);
-
+/*
     const cardContent = document.createElement('div');
     cardContent.classList.add("card-content");
     const cardContentSpan = document.createElement('span');
@@ -93,21 +90,17 @@ function displayProject(idx){
     cardReveal.appendChild(cardRevealSpan);
     cardReveal.appendChild(cardRevealUl);
 
-
+*/
     projectCard.appendChild(cardImg);
-    projectCard.appendChild(cardContent);
-    projectCard.appendChild(cardReveal);
+//    projectCard.appendChild(cardContent);
+//    projectCard.appendChild(cardReveal);
 
     projectDiv.appendChild(projectCard);
     projectContainer.appendChild(projectDiv);
-*/
+
 }
 
 function pressLoadMore() {
-    const projectContainer = document.getElementById('most_recent_project');
-    const projectP = document.createElement('p');
-    projectP.appendChild(document.createTextNode("Hay"));
-    projectContainer.appendChild(projectP);
 
     if (cur_idx < projects.length) {
         displayProject(cur_idx);
