@@ -47,21 +47,6 @@ function findLatestProject(){
 
 function displayProject(idx){
     if (idx >= projects.length) return;
-    let i = 0;
-    
-    while (i < projects.length) {
-    const projectContainer = document.getElementById('most_recent_project');
-    findLatestProject();
-    if(unpressed) {
-      const project = projects[lastest_idx];
-      unpressed=0;
-    }else{
-      if(i = lastest_idx) i++;
-      if (i >= projects.length) return;
-      const project = projects[i];
-      i++;
-    }
-
     const projectDiv = document.createElement('div');
     projectDiv.classList.add("col", "s12", "m6", "l4");
 
@@ -127,10 +112,19 @@ function displayProject(idx){
 
 function pressLoadMore() {
     const projectContainer = document.getElementById('most_recent_project');
-
-    if (cur_idx < projects.length) {
+    
+      if(unpressed) {
         displayProject(cur_idx);
-        cur_idx++;
+        const project = projects[lastest_idx];
+        unpressed=0;
+      }else{
+        while(cur_idx<projects.length){
+          if(cur_idx = lastest_idx) cur_idx++;
+          if (cur_idx >= projects.length) return;
+          displayProject(cur_idx);
+          cur_idx++;
+        }
+      }
 
         // Hide the "Load More" button if all projects are loaded
         if (cur_idx >= projects.length) {
@@ -143,4 +137,5 @@ function pressLoadMore() {
 }
 
 document.getElementById('load-more').addEventListener('click', pressLoadMore);
+findLatestProject();
 pressLoadMore();
