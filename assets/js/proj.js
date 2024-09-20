@@ -41,8 +41,8 @@ function displayProject(idx){
     const project = projects[idx];
 
     const projectDiv = document.createElement('div');
-    projectDiv.classList.add("col s12 m6 l4");
-//    projectDiv.classList.add("col", "s12", "m6", "l4");
+//    projectDiv.classList.add("col s12 m6 l4");
+    projectDiv.classList.add("col", "s12", "m6", "l4");
 
     const projectCard = document.createElement('div');
     projectCard.classList.add("card");
