@@ -35,7 +35,7 @@ function displayProject(idx){
     if (idx >= projects.length) return;
     const projectContainer = document.getElementById('most_recent_project');
     const projectP = document.createElement('p');
-    projectP.appendChild(document.createTextNode("Hay"));
+    projectP.appendChild(document.createTextNode("Hay 1"));
     projectContainer.appendChild(projectP);
 
     const project = projects[idx];
@@ -44,8 +44,8 @@ function displayProject(idx){
     projectDiv.classList.add("col s12 m6 l4");
 //    projectDiv.classList.add("col", "s12", "m6", "l4");
 
-//    const projectCard = document.createElement('div');
-//    projectCard.classList.add("card");
+    const projectCard = document.createElement('div');
+    projectCard.classList.add("card");
 //    projectCard.classList.add("card", "medium");
 /*
     const cardImg = document.createElement('div');
@@ -100,7 +100,7 @@ function displayProject(idx){
 //    projectCard.appendChild(cardContent);
 //    projectCard.appendChild(cardReveal);
 
-//    projectDiv.appendChild(projectCard);
+    projectDiv.appendChild(projectCard);
     projectContainer.appendChild(projectDiv);
 
 }
