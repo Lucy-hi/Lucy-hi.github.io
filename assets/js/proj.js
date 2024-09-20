@@ -116,10 +116,11 @@ function pressLoadMore() {
     const projectContainer = document.getElementById('most_recent_project');
     
       if(unpressed) {
+        findLatestProject();
         displayProject(lastest_idx);
         unpressed=0;
       }else{
-          if(cur_idx = lastest_idx) cur_idx++;
+          if(cur_idx == lastest_idx) cur_idx++;
           if (cur_idx >= projects.length) return;
           displayProject(cur_idx);
           cur_idx++;
@@ -135,5 +136,4 @@ function pressLoadMore() {
 }
 
 document.getElementById('load-more').addEventListener('click', pressLoadMore);
-findLatestProject();
 pressLoadMore();
