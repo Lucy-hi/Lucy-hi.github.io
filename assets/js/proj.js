@@ -116,8 +116,7 @@ function pressLoadMore() {
     const projectContainer = document.getElementById('most_recent_project');
     
       if(unpressed) {
-        displayProject(cur_idx);
-        const project = projects[lastest_idx];
+        displayProject(lastest_idx);
         unpressed=0;
       }else{
         while(cur_idx<projects.length){
